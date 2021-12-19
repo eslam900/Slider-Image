@@ -1,0 +1,71 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 900px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    overflow-y: hidden;
+}
+.container .nummber-of{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 2;
+    background-color: rgba(158, 196, 120, 0.534);
+    padding: 3px;
+}
+.slider .container img{
+    width: 900px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.activ {
+    opacity: 1!important;
+    background-color: rgb(38, 147, 211) !important;
+}
+.slider .container i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    z-index: 2;
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin: 0 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.slider .container i:first-of-type{
+    right: 0;
+}
+.slider .container .bubbles{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 200px;
+    z-index: 2;
+}
+.slider .container .bubbles ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+.slider .container .bubbles ul li{
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(60, 19, 207);
+    border-radius: 50%;
+
+}
